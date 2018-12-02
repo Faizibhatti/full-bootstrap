@@ -31,6 +31,10 @@
        text-align: center;
        border: 1px solid white;
    }
+   .breadcrumb-item+.breadcrumb-item::before
+   {
+       content: "|";
+   }
  </style>
 
     <div class="container-fluid">
@@ -326,7 +330,7 @@
             <div class="row">
                 <div class="col-6">
                 <a href="#"><button class="btn btn-primary">primary</button></a>
-                <a href="#"><button class="btn btn-secondary">secondary</button></a>
+                <a href="#"><button class="btn btn-secondary">secondary <span class="badge badge-primary">4</span> </button></a>
                 <a href="#"><button class="btn btn-danger">danger</button></a>
                 <a href="#"><button class="btn btn-faded">faded</button></a>
                 <a href="#"><button class="btn btn-info">info</button></a>
@@ -352,12 +356,105 @@
 
             <div class="row mt-2">
                 <div class="btn-toolbar" aria-label="all pets">
-                <div class="btn-group" aria-label="all pets">
+                <div class="btn-group " aria-label="all pets">
                         <a href="#"><button class=" btn-primary">primary</button></a>
                         <a href="#"><button  class=" btn-primary">secondary</button></a>
                         <a href="#"><button  class="btn-primary">danger</button></a>
                         
                     </div>
+                    <div class="btn-group-vertical ml-4" aria-label="all pets">
+                            <a href="#"><button class="btn btn-primary">primary</button></a>
+                            <a href="#"><button  class="btn btn-primary">secondary</button></a>
+                            <a href="#"><button  class="btn btn-primary">danger</button></a>
+                            
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h1 class="text-center mt-5">--> Badges</h1>
+            <div class="row">
+                <div class="col">
+                <h2 class="text-center">our mission <span class="badge badge-primary"> possible</span></h2>
+                <p class="text-center lead">you are great person. i have many toys and i will play with my toys.</p>
+                <p class="text-center">after exam, i want to go to <span class="badge badge-danger">lahore</span>  and i have many cousin and i will enjoy with my cousin.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <h1 class="text-center text-uppercase mt-10">--> progress bar by badges</h1>
+            <div class="row">
+               <div class="col">
+                   <h1>faizi</h1>
+                   <div class="progress">
+                       <div class="progress-bar w-75" role="progressbar" aria-valuenow="73%" aria-valuemax="100%" aria-valuemin="0">75%</div>
+                   </div>
+                   <p>i am faizi bhatti. i have a talented boy. i am sigle and alone.</p>
+                   <h2>hammad</h2>
+                   <div class="progress">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:85%;">85%</div>
+                    </div>
+                   <p>i am faizi bhatti. i have a talented boy. i am sigle and alone.</p>
+                   <h3>zain</h3>
+                   <div class="progress">
+                        <div class="progress-bar bg-info w-50">50%</div>
+                    </div>
+                   <p>i am faizi bhatti. i have a talented boy. i am sigle and alone.</p>
+                   <h4>aoun</h4>
+                   <div class="progress">
+                        <div class="progress-bar bg-danger w-25">25%</div>
+                        <div class="progress-bar bg-primary w-25">25%</div>
+                    </div>
+                   <p>i am faizi bhatti. i have a talented boy. i am sigle and alone.</p>
+               </div>
+            </div>
+            
+        </section>
+
+        <section class="container">
+            <h1 class="text-center">LIST GROUP</h1>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group ">
+                        <li class="list-group-item list-group-item-action active "><h2 class="mb-0">faizi</h2></li>
+                        <li  class="list-group-item list-group-item-action list-group-item-danger  d-flex justify-content-between align-items-center ">faizi <span class="badge badge-info badge-pill">12</span></li>
+                        <li  class="list-group-item disabled">faizi</li>
+                        <li  class="list-group-item list-group-item-action">faizi</li>
+                    </ul>
+
+   <div class="mt-3 list-group">
+                    <a class="list-group-item active" href="#">faizi</a>
+                    <a class="list-group-item list-group-item-action list-group-item-success" href="#">faizi</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary" href="#">faizi</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" href="#">faizi</a>
+   </div>
+   <div class="mt-3 list-group">
+       <button class="list-group-item list-group-item-action active">faizi</button>
+       <button class="list-group-item list-group-item-action list-group-item-info">faizi</button>
+       <button class="list-group-item list-group-item-action list-group-item-danger">faizi</button>
+       <button class="list-group-item list-group-item-action list-group-item-success">faizi</button>
+   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h1 class="text-center"> ----> BREADCRUMB LINK</h1>
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">home</a></li>
+                        <li class="breadcrumb-item"><a href="#">about</a></li>
+                        <li class="breadcrumb-item" >help</li>
+                    </ol>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">home</a>
+                        <a class="breadcrumb-item" href="#">about</a>
+                        <a class="breadcrumb-item" href="#">help</a>
+                        <span class="breadcrumb-item">link</span>
+                    </nav>
                 </div>
             </div>
         </section>
