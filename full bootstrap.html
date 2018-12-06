@@ -39,6 +39,16 @@
    {
        background-image: url("css/image/wao2.jpg");
    }
+   .card-first
+   {
+       position: relative;
+       transition: all .8s;
+   }
+   .card-first:hover
+   {
+       position: absolute;
+       transform: translate(-1rem) scale(1);
+   }
  </style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -516,19 +526,19 @@
     <div class="row">
         <div class="col">
         <h1 class="text-center text-primary">table</h1>
-        <table class="table table-hover">
+        <table class="table table-hover">    // table-responsive   table-inverse  table-striped
             <thead class="bg-danger text-white">
                 <tr>
-                    <th scope="col">Items</th>
-                    <th scope="col">product</th>
-                    <th scope="col">name</th>
-                    <th scope="col">age</th>
-                    <th scope="col">average</th>
-                    <th scope="col">Items</th>
-                    <th scope="col">product</th>
-                    <th scope="col">name</th>
-                    <th scope="col">age</th>
-                    <th scope="col">average</th>
+                    <th >Items</th>
+                    <th >product</th>
+                    <th >name</th>
+                    <th >age</th>
+                    <th >average</th>
+                    <th >Items</th>
+                    <th >product</th>
+                    <th >name</th>
+                    <th >age</th>
+                    <th >average</th>
                 </tr>
             </thead>
             <tbody>
@@ -603,6 +613,75 @@
                             </tbody>
         </table>
         </div>
+    </div>
+</div>
+
+<!-- cards -->
+
+<div class="container ">
+    <div class="row">
+        <div class="col-3">
+            <h1 class="text-center text-danger">cards</h1>
+        <div class="card card-img-top card-inverse card-outline-primary mb-5">
+            <header class="card-header">
+                 <h2 class="mb-0">Extra Thing </h2></header>
+            <img class="img-fluid " src="css/image/wao2.jpg" alt="">
+            <div class="card-body ">
+                <h1 class="card-title">card layout</h1>
+                <h5 class="card-subtitle">Missing point</h5>
+                <p class="card-text">i am faizi bhatti. i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha</p>
+            </div>
+            <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action" href="#">home</a>
+                    <a class="list-group-item list-group-item-action" href="#">home</a>
+                    <a class="list-group-item list-group-item-action" href="#">home</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+                <h1 class="text-center text-danger">cards</h1>
+                <div class="card card-img-top card-inverse card-outline-primary mb-5 card-first">
+                        <header class="card-header">
+                                <h2 class="mb-0">Extra Thing </h2>
+                            </header>
+                    <img class="img-fluid" src="css/image/wao2.jpg" alt="">
+                    <div class="card-body">
+                        <h1 class="card-title">card layout</h1>
+                        <h5 class="card-subtitle">Missing point</h5>
+                        <p class="card-text">i am faizi bhatti. i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha</p>
+                    </div>
+                    <footer class="card-footer">
+                            <a class="card-link" href="#">home</a>
+                            <a class="card-link" href="#">home</a>
+                            <a class="card-link" href="#">home</a>
+                      </footer>
+                </div>
+        </div>
+        
+                <div class="col-3">
+                        <h1 class="text-center text-danger">cards</h1>
+                        <div class="card card-img-top card-inverse card-outline-primary mb-5">
+                                <header class="card-header">
+                                       <nav class="nav nav-tabs card-header-tabs">
+                                            <a class="nav-link nav-item active" href="#">home</a>
+                                            <a class="nav-link nav-item" href="#">home</a>
+                                            <a class="nav-link nav-item" href="#">home</a>
+                                       </nav>
+                                    </header>
+                            <img class="img-fluid" src="css/image/wao2.jpg" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">card layout</h1>
+                                <h5 class="card-subtitle">Missing point</h5>
+                                <p class="card-text">i am faizi bhatti. i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha i have 1 brother and i live in sargodha</p>
+                            </div>
+                            <footer class="card-footer">
+                                    <a class="card-link" href="#">home</a>
+                                    <a class="card-link" href="#">home</a>
+                                    <a class="card-link" href="#">home</a>
+                              </footer>
+                        </div>
+                </div>
+       <div class="col-3">
     </div>
 </div>
          
