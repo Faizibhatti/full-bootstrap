@@ -788,8 +788,160 @@
     </div>
 
 
-    <!-- img-practice -->        
+    <!-- form --> 
+    <div class="container"> 
+         
+            <h1 class="text-center">Forms</h1>
+    <form>
+        <fieldset class="form-group">
+            <legend>User info</legend>
+           <div class="form-group">
+               <label class="form-control-label" for="username"> User Name</label>
+               <input class="form-control" type="text" name="name" id="username" placeholder="your name">
+           </div>
+           <div class="form-group">
+                <label class="form-control-label" for="email">Email Address</label>
+                <input class="form-control" type="text" name="email" id="email" placeholder="email address">
+            </div>
+        </fieldset>
 
+        <fieldset class="form-group">
+            <legend>Admin Info</legend>
+               <div class="form-group">
+                 <label class="form-control-label sr-only" for="adminname">Admin Name</label>
+                 <input class="form-control" type="text" name="name" id="adminname" placeholder="Admin Name">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="admingmail">Enter gmail</label>
+                    <input class="form-control" type="text" name="email" id="admingmail" placeholder="Enter gmail">
+                   <small class="form-text text-muted" id="admingmail">We will never miss this form.</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="petid">Pet Name</label>
+                    <select class="form-control" name="name" id="petid">
+                        <option>Choose</option>
+                        <option value="Dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="none">none</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="text-area">Reason for text</label>
+                    <textarea class="form-control" name="name" id="text-area" cols="3" rows="3"></textarea>
+                </div>
+
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend>Pets Medical</legend>
+            <div class="form-group">
+               <label>Has your pet been spayed?</label>
+
+                <div class="form-check">
+                   <label class="form-check-label">
+                       <input type="radio" name="name" value="yes" checked> Yes
+                  </label>
+                </div>
+                   <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" name="name" value="yes"> No
+                    </label>
+                  </div>
+            </div>
+            <div class="form-group">
+                <label>Has the pet had any of the following</label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> DOG
+                    </label>
+                </div>
+                <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox"> CAT
+                        </label>
+                    </div>
+                    <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox"> BOTH
+                            </label>
+                        </div>
+            </div>      
+        </fieldset>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>  
+    
+    </div>
+
+
+    <!-- form-style -->
+    <div class="container">
+       
+           <h1 class="text-center mt-3">form style</h1>
+           <form action="">
+               <fieldset class="form-group">
+                   <legend>Style practice</legend>
+                   <div class="form-group has-success">
+                       <label class="form-control-label" for="id">Enter id</label>
+                           <input class="form-control form-control-sm form-control-success" type="text" id="id" name="name" placeholder="Enter id">
+                   </div>
+                   <div class="form-group form-inline">
+                    <label class="form-control-label" for="email">Enter Email</label>
+                        <input class="form-control form-control-lg mx-sm-2" type="text" id="email" name="email" placeholder="Enter email">
+                        <small class="form-text text-muted" id="emailhelp">i am a good boy</small>
+                </div>
+                <!-- input groups -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input class="form-control" type="text" name="email" id="email" placeholder="enter-email">
+                </div>
+                <div class="input-group mb-3">
+                        <input class="form-control" type="text" name="email" id="email" placeholder="Username">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Add name</span>
+                    </div>
+                </div>
+               </fieldset>
+           </form>
+       
+    </div>
+
+
+    <!-- multicolumn form -->
+    <div class="container">
+        <h1 class="text-center mt-3 mb-3">Multicolumn form</h1>
+        <form>
+            <fieldset>
+                <div class="form-group row">
+                    <div class="form-group col-6 offset-md-2">
+                        <label for="id" class="form-control-label sr-only">name</label>
+                        <input class="form-control" type="text" name="name" id="id" placeholder="zip code">
+
+                    </div>
+                    <div class="form-group col-4">
+                            <label for="id" class="form-control-label sr-only">name</label>
+                            <input class="form-control" type="text" name="name" id="id" placeholder="city">
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="form-control-label text-md-right col-md-2 col-form-label" for="id">zip code</label>
+                        <div class="col-md-10">
+                                <input class="form-control" type="text" name="name" id="id" placeholder="zip code">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <label class="form-control-label text-md-right col-md-2 col-form-label" for="id">city</label>
+                            <div class="col-md-10">
+                                    <input class="form-control" type="text" name="name" id="id" placeholder="city">
+                            </div>
+                        </div>
+            </fieldset>
+        </form>
+    </div>
 
 
 
